@@ -15,8 +15,369 @@ cv
         <link rel="icon" href="favicon.ico"/>
         <!-- bootstrap core css -->
         <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css"/>
+        <!-- css -->
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cv.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <!-- barre de navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Navigation raccourcie</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mon portfolio</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+                        <li class="active"><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-list-alt"></span> Réalisations<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">En autonomie</li>
+                                <li role="presentation"><a role="menuitem" href="#">Application Android</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Site web</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Etude et analyses</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">En entreprise</li>
+                                <li role="presentation"><a role="menuitem" href="#">Stage de 1e année</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Stage de 2e année</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-education"></span> Jury E4 BTS SIO<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">Documentations contexte</li>
+                                <li role="presentation"><a role="menuitem" href="#">Présentation</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Application</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Missions à réaliser</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Annexes</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Fiches d'examen</li>
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°2</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Démonstrations</li>
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°2</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Codes sources</li>
+                                <li role="presentation"><a role="menuitem" href="#">Source SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Source SP n°2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Me contacter</a></li>
+                    </ul>    
+                </div><!--/ .nav-collapse -->
+            </div><!--/ .navbar-collapse -->
+        </nav>
+        
+        <!-- main jumbotron for a primary marketing message or call to action -->
+        <!-- texte de présentation et photo -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row cadreCV">
+                    <div id="cv-entete" class="text-center">
+                        <div id="cv-photo">
+                            <img src="images/profil_fp_mini.png" alt="Ma photo d'identité"/>
+                        </div>
+                        <div id="cv-intro">
+                            <h1>Bienvenue sur mon <span>CV !</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cadreCV">
+                    <div class="col-xs-12 col-sm-7">
+                        <!-- Partie gauche -->
+                        <div class="rubrique">
+                            <!-- présentation -->
+                            <h2><span class="glyphicon glyphicon-comment"></span> En quelques mots...</h2>
+                            <p>Âgé de 34 ans et habitant dans la région de Strasbourg, j'ai décidé de quitter l'enseignement pour me reconvertir 
+                                professionnellement dans l'informatique. Passionné par la programmation, j'ai choisi de devenir développeur.
+                            </p>
+                        </div>
+                        <div class="rubrique">
+                            <!-- formations et diplômes -->
+                            <h2><span class="glyphicon glyphicon-education"></span> Formation</h2>
+                            <ul id="parcours" class="clearfix">
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2017
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>BTS SIO option SLAM (en cours)</h3>
+                                        <p>Brevet de Technicien Supérieur "Services Informatiques aux Organisations", option "Solutions Logicielles
+                                            et Applications Métiers"
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2008
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>IUFM Martinique</h3>
+                                        <p>Institut Universitaire de Formation des Maîtres, 2e au concours de professorat des écoles
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2006
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Maîtrise STAPS</h3>
+                                        <p>Maîtrise Sciences et Techniques des Activités Physiques et Sportives, Université de Strasbourg
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2004
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Licence STAPS</h3>
+                                        <p>Licence Sciences et Techniques des Activités Physiques et Sportives, Université de Strasbourg
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2003
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>DEUG STAPS</h3>
+                                        <p>DEUG Sciences et Techniques des Activités Physiques et Sportives, Université de Strasbourg
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2001
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Bac S</h3>
+                                        <p>Baccalauréat Série S, mention Assez Bien, Lycée Kléber, Strasbourg
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rubrique">
+                            <!-- expériences pro -->
+                            <h2><span class="glyphicon glyphicon-briefcase"></span> Expériences professionnelles</h2>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">URSSAF</div>
+                                    <div class="date">2016 (2 sem.) et 2017 (2 sem.)</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Développement C#</div>
+                                    <div class="details">
+                                        Conception, création et développement d'une application sur support mobile (lecteur code barre).
+                                        Réalisation de diagrammes (classes, séquence, cas d'utilisation, MCD) et d'une documentation utilisateur.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">Best Partners</div>
+                                    <div class="date">2016 (7 sem.)</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Développement PHP, HTML et CSS</div>
+                                    <div class="details">
+                                        Développement d'une application web avec interface utilisateur. Réalisations de pages web pour affichage 
+                                        de données. Utilisation de méthodes et outils spécifiques (Ajax, JQuery). Rédaction d'une documentation 
+                                        technique.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">Education Nationale</div>
+                                    <div class="date">Depuis 2007</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Professeur des écoles</div>
+                                    <div class="details">
+                                        Enseignement général sur publics et classes variées (élémentaires essentiellement, maternelles, classes uniques, 
+                                        double niveau, triple niveau, classes bilingues). Enseignement en classe spécialisée (SEGPA) et fonction de 
+                                        direction (1 an)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <!-- Partie droite -->
+                        <div class="rubrique clearfix">
+                            <!-- liens pour contact -->
+                            <h2><span class="glyphicon glyphicon-user"></span> Me contacter</h2>
+                            <div class="meContacter">
+                                <div class="details pull-left">
+                                    <a href="mailto:fred_pouillard@hotmail.com?subject=Contact depuis le CV en ligne" title="Mon Mail">
+                                        <img class="contact-icon" src="images/cv/mail-dreamstale47.png" /> Hotmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meContacter">
+                                <div class="details pull-left">
+                                    <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-pouillard-767a4689/" title="Lien vers mon profil LinkedIn">
+                                        <img class="contact-icon" src="images/cv/linkedin-dreamstale45.png" /> LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meContacter">
+                                <div class="details pull-left">
+                                    <a href="https://github.com/FredPouillard" title="Lien vers mon profil GitHub">
+                                        <img class="contact-icon" src="images/cv/github.png" /> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meContacter">
+                                <div class="details pull-left">
+                                    <a href="http://www.viadeo.com/p/002o08mtyifi7rv" title="Lien vers mon profil Viadeo">
+                                        <img class="contact-icon" src="images/cv/viadeo.png" /> Viadeo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="competences" class="rubrique">
+                            <!-- compétences -->
+                            <h2><span class="glyphicon glyphicon-wrench"></span> Compétences</h2>
+                            <div class="container">
+                                <div class="libelle">Développement d'application</div>
+                                <div class="classement classement4"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Langages : C, C++, C#, PHP</div>
+                                <div class="classement classement4"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Développement web</div>
+                                <div class="classement classement3"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Programmation objet : Java</div>
+                                <div class="classement classement3"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Conception / gestion BDD</div>
+                                <div class="classement classement3"></div>
+                            </div>
+                        </div>
+                        <div id="langues" class="rubrique">
+                            <!-- langues -->
+                            <h2><span class="glyphicon glyphicon-flag"></span> Langue</h2>
+                            <div class="container">
+                                <div class="langue">Français</div>
+                                <div class="niveau">
+                                    <span class="label label-default">A1</span>
+                                    <span class="label label-default">A2</span>
+                                    <span class="label label-default">B1</span>
+                                    <span class="label label-default">B2</span>
+                                    <span class="label label-default">C1</span>
+                                    <span class="label label-success">C2</span>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="langue">Anglais</div>
+                                <div class="niveau">
+                                    <span class="label label-default">A1</span>
+                                    <span class="label label-default">A2</span>
+                                    <span class="label label-default">B1</span>
+                                    <span class="label label-success">B2</span>
+                                    <span class="label label-default">C1</span>
+                                    <span class="label label-default">C2</span>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="langue">Allemand</div>
+                                <div class="niveau">
+                                    <span class="label label-default">A1</span>
+                                    <span class="label label-default">A2</span>
+                                    <span class="label label-success">B1</span>
+                                    <span class="label label-default">B2</span>
+                                    <span class="label label-default">C1</span>
+                                    <span class="label label-default">C2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rubrique">
+                            <!-- passions -->
+                            <h2><span class="glyphicon glyphicon-globe"></span> Passions et centres d'intérêts</h2>
+                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Sport</div>
+                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Handball</div>
+                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Voyage</div>
+                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Informatique</div>
+                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Programmation</div>
+                        </div>
+                        <div class="rubrique">
+                            <!-- soft skills -->
+                            <h2><span class="glyphicon glyphicon-screenshot"></span> Soft skills</h2>
+                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Détermination</div>
+                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Adaptabilité</div>
+                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Logique</div>
+                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Esprit d'équipe</div>
+                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Ouverture d'esprit</div>
+                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Curiosité</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ajout d'un pied de page -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Etudiant au CNED</h2>
+                        <p>Etant actuellement professeur des écoles, je souhaite me reconvertir professionnellement. Le Centre National d'Enseignement 
+                            à Distance m'offrait cette possibilité de poursuivre mon emploi actuel tout en me préparant à ma nouvelle voie. Cela m'a permis 
+                            d'apprendre à mon rythme et de manière autonome, mais aussi de me construire un véritable parcours de formation qui associe 
+                            cours du CNED et auto - formation à travers des MOOC et des sites spécialisés. Pour atteindre mon objectif, il m'a fallu faire 
+                            preuve de détermination et d'organisation.
+                        </p>
+                        <p>
+                            <a class="btn btn-default" href="http://cned.fr" target="_blank" role="button">En savoir plus &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Le BTS SIO</h2>
+                        <p>Passionné par l'informatique et plus particulièrement par la programmation, c'est tout naturellement que je me suis tourné 
+                            vers ce domaine après avoir décidé de quitter l'enseignement et la fonction publique. Le BTS SIO m'assurait alors une formation 
+                            de qualité pour acquérir les compétences nécessaires au mode du développement. Les matières dispensées sont notamment attrayantes : 
+                            mathématiques, algorithme, développement logiciel et web, étude des serveurs et du fonctionnement de l'ordinateur, gestion de projet...
+                        </p>
+                        <p>
+                            <a class="btn btn-default" href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations" target="_blank" role="button">En savoir plus &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Option B SLAM</h2>
+                        <p>Curieux et logique, j'apprécie notamment de concevoir, de chercher, d'améliorer et d'optimiser. En codant pour la première fois 
+                            et plus précisément sur du langage C, j'ai remarqué que le développement était l'activité qui me convenait et qui me permettait 
+                            de m'épanouir, aussi bien professionnellement qu'intellectuellement. Il était alors évident que je me tourner vers l'option SLAM, 
+                            plus à même de faire de moi un développeur.
+                        </p>
+                        <p><a class="btn btn-default" href="http://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/BTS-Services-informatiques-aux-organisations-option-B-solutions-logicielles-et-applications-metiers" target="_blank" role="button">En savoir plus &raquo;</a></p>
+                    </div>
+                </div>
+                <hr />
+                <p id="copyright">&copy; Frédéric Pouillard 2017</p>
+            </div>
+        </footer>
+        
+        <!-- bootstrap core javascript ================================ -->
+        <!-- placed at the end of the document so the pages load faster -->
+        <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="css/bootstrap-3.3.7-dist/js/ie10-viewport-bug-workaroud.js"></script>
     </body>
 </html>
