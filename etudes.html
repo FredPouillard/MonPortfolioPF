@@ -18,6 +18,7 @@ Etudes et analyses (page spécifique pour la veille technologique)
         <!-- css -->
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
         <link href="css/cv.css" rel="stylesheet" type="text/css"/>
+        <link href="css/etudes.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <!-- barre de navigation -->
@@ -35,13 +36,11 @@ Etudes et analyses (page spécifique pour la veille technologique)
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
-                        <li class="active"><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-list-alt"></span> Réalisations<span class="caret"></span></a>
+                        <li><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV</a></li>
+                        <li class="active"><a href="etudes.html" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-list-alt"></span> Réalisations<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li role="presentation" class="dropdown-header">En autonomie</li>
-                                <li role="presentation"><a role="menuitem" href="#">Application Android</a></li>
-                                <li role="presentation"><a role="menuitem" href="#">Site web</a></li>
-                                <li role="presentation"><a role="menuitem" href="#">Etude et analyses</a></li>
+                                <li role="presentation"><a role="menuitem" href="etudes.html">Etude et analyses</a></li>
                                 <li role="presentation" class="divider"></li>
                                 <li role="presentation" class="dropdown-header">En entreprise</li>
                                 <li role="presentation"><a role="menuitem" href="#">Stage de 1e année</a></li>
@@ -69,7 +68,7 @@ Etudes et analyses (page spécifique pour la veille technologique)
                                 <li role="presentation"><a role="menuitem" href="#">Source SP n°2</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Me contacter</a></li>
+                        <li><a href="cv.html"><span class="glyphicon glyphicon-envelope"></span> Me contacter</a></li>
                     </ul>    
                 </div><!--/ .nav-collapse -->
             </div><!--/ .navbar-collapse -->
@@ -90,248 +89,105 @@ Etudes et analyses (page spécifique pour la veille technologique)
                     </div>
                 </div>
                 <div class="row cadreCV">
-                    <div class="col-xs-12 col-sm-7">
-                        <!-- Partie gauche -->
+                    <div class="cadreEtudes">
                         <div class="rubrique">
-                            <!-- présentation -->
-                            <h2><span class="glyphicon glyphicon-comment"></span> En quelques mots...</h2>
-                            <p>Âgé de 34 ans et habitant dans la région de Strasbourg, j'ai décidé de quitter l'enseignement pour me reconvertir 
-                                professionnellement dans l'informatique. Passionné par la programmation, j'ai choisi de devenir développeur.
+                            <!-- veille -->
+                            <h2><span class="glyphicon glyphicon-exclamation-sign"></span> Veille technologique</h2>
+                            <p>La veille technologique est un processus indispensable. Elle nous permet de rester informé des nouveautés et des évolutions, 
+                                tant sur le plan technique que législatif, managérial et économique. La veille nous permet donc de rester performant.
+                            </p>
+                            <p>Afin d'assurer cette veille, je me suis abonné à des flux d'informations de sites spécialisés :</p>
+                            <!-- insertion des images -->
+                            <div id="logos">
+                                <a href="http://www.journaldunet.com/"><img src="images/etudes/jdn.png" alt= "JDN"></a>
+                                <a href="http://www.zdnet.fr/"><img src="images/etudes/zdnet.png" alt= "ZDNet"></a>
+                            </div>
+                            <p>JournalDuNet et ZDNet sont deux sites riches en information sur les nouvelles technologies et les évolutions des technologies de l'information, 
+                                mais aussi en articles traitant des changements de la législation, des méthodes de managérat, des impacts économiques 
+                                suite à l'arrivée d'une nouvelle technologie ou aux actions de certaines sociétés...
                             </p>
                         </div>
                         <div class="rubrique">
-                            <!-- formations et diplômes -->
-                            <h2><span class="glyphicon glyphicon-education"></span> Formation</h2>
-                            <ul id="parcours" class="clearfix">
+                            <!-- autoformation -->
+                            <h2><span class="glyphicon glyphicon-list-alt"></span> Auto - Formation</h2>
+                            <div class="rubrique">
+                                <p>Pour maintenir un bon niveau de compétence, j'ai complété ma formation avec des cours proposés par <a href="https://openclassrooms.com/">OpenClassRooms</a>.
+                                    Il s'agit d'un MOOC, un site qui propose des cours et des formations en ligne. Certaines de ces formations sont 
+                                    certifiantes, d'autres diplômantes. Voici les cours qui j'ai suivis :
+                                </p>
+                            </div>
+                            <ul id="cours" class="clearfix">
                                 <li>
-                                    <div class="date pull-left">
-                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2017
+                                    <div class="titre pull-left">
+                                        <span class="glyphicon glyphicon-circle-arrow-right"></span>&nbsp;C
                                     </div>
                                     <div class="details pull-right">
-                                        <h3>BTS SIO option SLAM (en cours)</h3>
-                                        <p>Brevet de Technicien Supérieur "Services Informatiques aux Organisations", option "Solutions Logicielles
-                                            et Applications Métiers"
+                                        <h3>Apprenez à programmer en C !</h3>
+                                        <p>Découverte de la programmation, apprentissage du langage C (principes élémentaires et avancés, pointeurs, programmation événementielle).
                                         </p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="date pull-left">
-                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2008
+                                    <div class="titre pull-left">
+                                        <span class="glyphicon glyphicon-circle-arrow-right"></span>&nbsp;C++
                                     </div>
                                     <div class="details pull-right">
-                                        <h3>IUFM Martinique</h3>
-                                        <p>Institut Universitaire de Formation des Maîtres, 2e au concours de professorat des écoles
-                                        </p>
+                                        <h3>Du C au C++</h3>
+                                        <p>Cours permettant le passage du langage C vers le C++ : points communs et principales différences.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="date pull-left">
-                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2006
+                                    <div class="titre pull-left">
+                                        <span class="glyphicon glyphicon-circle-arrow-right"></span>&nbsp;HTML, CSS
                                     </div>
                                     <div class="details pull-right">
-                                        <h3>Maîtrise STAPS</h3>
-                                        <p>Maîtrise Sciences et Techniques des Activités Physiques et Sportives, Université de Strasbourg
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="date pull-left">
-                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2004
-                                    </div>
-                                    <div class="details pull-right">
-                                        <h3>Licence STAPS</h3>
-                                        <p>Licence Sciences et Techniques des Activités Physiques et Sportives, Université de Strasbourg
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="date pull-left">
-                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2003
-                                    </div>
-                                    <div class="details pull-right">
-                                        <h3>DEUG STAPS</h3>
-                                        <p>DEUG Sciences et Techniques des Activités Physiques et Sportives, Université de Strasbourg
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="date pull-left">
-                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2001
-                                    </div>
-                                    <div class="details pull-right">
-                                        <h3>Bac S</h3>
-                                        <p>Baccalauréat Série S, mention Assez Bien, Lycée Kléber, Strasbourg
-                                        </p>
+                                        <h3>Apprenez à créer votre site web avec HTML5 et CSS3</h3>
+                                        <p>Apprentissage du langage HTML, création de pages web et mise en forme grâce au CSS</p>
                                     </div>
                                 </li>
                             </ul>
+                            <div class="rubrique">
+                                <p>D'autres cours sont envisagés prochainement dans l'objectif de parfaire ou de compléter ma formation : perfectionnement 
+                                    en PHP et en Java, découverte du framework Symfony...
+                                </p>
+                            </div>
                         </div>
                         <div class="rubrique">
-                            <!-- expériences pro -->
-                            <h2><span class="glyphicon glyphicon-briefcase"></span> Expériences professionnelles</h2>
+                            <!-- études de technologie -->
+                            <h2><span class="glyphicon glyphicon-search"></span> Etude d'outils et de méthodes</h2>
+                            <div class="rubrique">
+                                <p>Les stages réalisés lors de ma formation m'ont permis d'étoffer mon panel de compétences, et notamment 
+                                    de découvrir de nouvelles méthodes ou outils.
+                                </p>
+                            </div>
                             <div class="experience clearfix">
                                 <div class="col-xs-3">
-                                    <div class="lieu">URSSAF</div>
-                                    <div class="date">2016 (2 sem.) et 2017 (2 sem.)</div>
+                                    <div class="logo"><a href="https://jquery.com/"><img src="images/etudes/jquery.png" alt= "JQuery"></a></div>
                                 </div>
                                 <div class="col-xs-9">
-                                    <div class="profession">Développement C#</div>
+                                    <div class="profession">JQuery</div>
                                     <div class="details">
-                                        Conception, création et développement d'une application sur support mobile (lecteur code barre).
-                                        Réalisation de diagrammes (classes, séquence, cas d'utilisation, MCD) et d'une documentation utilisateur.
+                                        JQuery est une bibliothèque Javascript. Elle est libre et contient une multitude de fonctions. Son principe est
+                                        de faire gagner du temps au développeur en proposant une écriture des scripts plus courte et plus simple. Son slogan 
+                                        est bien explicite : écrivez moins, faites plus.
                                     </div>
                                 </div>
                             </div>
                             <div class="experience clearfix">
                                 <div class="col-xs-3">
-                                    <div class="lieu">Best Partners</div>
-                                    <div class="date">2016 (7 sem.)</div>
+                                    <div class="logo"><a href="https://fr.wikipedia.org/wiki/Ajax_(informatique)"><img src="images/etudes/ajax.png" alt= "AJAX"></a></div>
                                 </div>
                                 <div class="col-xs-9">
-                                    <div class="profession">Développement PHP, HTML et CSS</div>
+                                    <div class="profession">AJAX</div>
                                     <div class="details">
-                                        Développement d'une application web avec interface utilisateur. Réalisations de pages web pour affichage 
-                                        de données. Utilisation de méthodes et outils spécifiques (Ajax, JQuery). Rédaction d'une documentation 
-                                        technique.
+                                        AJAX (asynchronous javascript and xml) est une méthode qui présente plusieurs avantages. Elle agit de 
+                                        manière asynchrone, ce qui lui permet de charger une partie d'une page, ou de rechercher des données dans une
+                                        base sans recharger toute la page. Cela améliore la vitesse de réactivité d'un site et réduit le temps de latence.
+                                        Néanmoins, AJAX s'appuie sur le Javascript qui est parfois limité ou bloqué par des politiques de sécurité sur certains 
+                                        sites ou dans certaines entreprises et administrations.
                                     </div>
                                 </div>
                             </div>
-                            <div class="experience clearfix">
-                                <div class="col-xs-3">
-                                    <div class="lieu">Education Nationale</div>
-                                    <div class="date">Depuis 2007</div>
-                                </div>
-                                <div class="col-xs-9">
-                                    <div class="profession">Professeur des écoles</div>
-                                    <div class="details">
-                                        Enseignement général sur publics et classes variées (élémentaires essentiellement, maternelles, classes uniques, 
-                                        double niveau, triple niveau, classes bilingues). Enseignement en classe spécialisée (SEGPA) et fonction de 
-                                        direction (1 an)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-5">
-                        <!-- Partie droite -->
-                        <div class="rubrique clearfix">
-                            <!-- liens pour contact -->
-                            <h2><span class="glyphicon glyphicon-user"></span> Me contacter</h2>
-                            <div class="meContacter">
-                                <div class="details pull-left">
-                                    <a href="mailto:fred_pouillard@hotmail.com?subject=Contact depuis le CV en ligne" title="Mon Mail">
-                                        <img class="contact-icon" src="images/cv/mail-dreamstale47.png" alt="Email" /> Hotmail.com
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="meContacter">
-                                <div class="details pull-left">
-                                    <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-pouillard-767a4689/" title="Lien vers mon profil LinkedIn">
-                                        <img class="contact-icon" src="images/cv/linkedin-dreamstale45.png" alt="LinkedIn" /> LinkedIn
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="meContacter">
-                                <div class="details pull-left">
-                                    <a href="https://github.com/FredPouillard" title="Lien vers mon profil GitHub">
-                                        <img class="contact-icon" src="images/cv/github.png" alt="GitHub" /> GitHub
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="meContacter">
-                                <div class="details pull-left">
-                                    <a href="http://www.viadeo.com/p/002o08mtyifi7rv" title="Lien vers mon profil Viadeo">
-                                        <img class="contact-icon" src="images/cv/viadeo.png" alt="Viadeo" /> Viadeo
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="meContacter">
-                                <div class="details pull-left">
-                                    <a href="cv.html" title="Mon numéro de téléphone">
-                                        <img class="contact-icon" src="images/cv/phone.png" alt="Mobile" /> 06.23.62.95.19
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="competences" class="rubrique">
-                            <!-- compétences -->
-                            <h2><span class="glyphicon glyphicon-wrench"></span> Compétences</h2>
-                            <div class="container">
-                                <div class="libelle">Développement d'application</div>
-                                <div class="classement classement4"></div>
-                            </div>
-                            <div class="container">
-                                <div class="libelle">Langages : C, C++, C#, PHP</div>
-                                <div class="classement classement4"></div>
-                            </div>
-                            <div class="container">
-                                <div class="libelle">Développement web</div>
-                                <div class="classement classement3"></div>
-                            </div>
-                            <div class="container">
-                                <div class="libelle">Programmation objet : Java</div>
-                                <div class="classement classement3"></div>
-                            </div>
-                            <div class="container">
-                                <div class="libelle">Conception / gestion BDD</div>
-                                <div class="classement classement3"></div>
-                            </div>
-                        </div>
-                        <div id="langues" class="rubrique">
-                            <!-- langues -->
-                            <h2><span class="glyphicon glyphicon-flag"></span> Langue</h2>
-                            <div class="container">
-                                <div class="langue">Français</div>
-                                <div class="niveau">
-                                    <span class="label label-default">A1</span>
-                                    <span class="label label-default">A2</span>
-                                    <span class="label label-default">B1</span>
-                                    <span class="label label-default">B2</span>
-                                    <span class="label label-default">C1</span>
-                                    <span class="label label-success">C2</span>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="langue">Anglais</div>
-                                <div class="niveau">
-                                    <span class="label label-default">A1</span>
-                                    <span class="label label-default">A2</span>
-                                    <span class="label label-default">B1</span>
-                                    <span class="label label-success">B2</span>
-                                    <span class="label label-default">C1</span>
-                                    <span class="label label-default">C2</span>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="langue">Allemand</div>
-                                <div class="niveau">
-                                    <span class="label label-default">A1</span>
-                                    <span class="label label-default">A2</span>
-                                    <span class="label label-success">B1</span>
-                                    <span class="label label-default">B2</span>
-                                    <span class="label label-default">C1</span>
-                                    <span class="label label-default">C2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rubrique">
-                            <!-- passions -->
-                            <h2><span class="glyphicon glyphicon-globe"></span> Passions et centres d'intérêts</h2>
-                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Sport</div>
-                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Handball</div>
-                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Voyage</div>
-                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Informatique</div>
-                            <div class="passion"><span class="glyphicon glyphicon-heart"></span> Programmation</div>
-                        </div>
-                        <div class="rubrique">
-                            <!-- soft skills -->
-                            <h2><span class="glyphicon glyphicon-screenshot"></span> Soft skills</h2>
-                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Détermination</div>
-                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Adaptabilité</div>
-                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Logique</div>
-                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Esprit d'équipe</div>
-                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Ouverture d'esprit</div>
-                            <div class="skill"><span class="glyphicon glyphicon-arrow-right"></span> Curiosité</div>
                         </div>
                     </div>
                 </div>
