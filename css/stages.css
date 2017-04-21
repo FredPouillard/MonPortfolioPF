@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 avr. 2017, 12:12:09
+    Author     : fred_
+*/
+
+#photoStage, #photoStage2 {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#photoStage div {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photoStage2 div {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photoStage p, #photoStage2 p {
+    font-size: 90%;
+}
+
+#listeDiag {
+    display: flex;
+    text-align: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+#listeDiag div {
+    margin: auto;
+    font-size: 130%;
+}
