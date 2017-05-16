@@ -32,8 +32,8 @@ body {
 }
 
 #cv-photo img {
-    width: 150px; /* 160px si photo carrée */
-    height: 168px; /* 160px si photo carrée */
+    width: 160px; /* 160px si photo carrée */
+    height: 160px; /* 160px si photo carrée */
     border-radius: 50%;
 }
 
